@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Full Stack Software Engineer — Core Fundamentals & Mentorship Plan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-layout">
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <div class="logo">
+          <span class="logo-icon">⚡</span>
+          <div class="logo-text">
+            <h2>FullStack Core</h2>
+            <span class="subtitle">Mentorship Roadmap</span>
+          </div>
+        </div>
+        <button id="themeToggle" class="icon-btn" title="Toggle Theme" aria-label="Toggle Theme">
+          <span class="theme-icon">🌙</span>
+        </button>
+      </div>
+
+      <div class="overall-progress-card">
+        <div class="progress-meta">
+          <span class="progress-title">Overall Progress</span>
+          <span class="progress-percent" id="totalPercent">0%</span>
+        </div>
+        <div class="progress-bar-bg">
+          <div class="progress-bar-fill" id="totalProgressBar" style="width: 0%"></div>
+        </div>
+        <div class="progress-stats">
+          <span id="completedCount">0</span> of <span id="totalCount">0</span> topics mastered
+        </div>
+      </div>
+
+      <div class="search-box">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="searchInput" placeholder="Search topics, tools, commands..." />
+        <button id="clearSearch" class="clear-search-btn" hidden>×</button>
+      </div>
+
+      <nav class="nav-menu" id="navMenu">
+        <!-- Rendered dynamically by app.js -->
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="mentee-action-row">
+          <button id="exportProgressBtn" class="btn btn-outline btn-xs" title="Export progress to JSON">Export</button>
+          <button id="importProgressBtn" class="btn btn-outline btn-xs" title="Import progress from JSON">Import</button>
+          <button id="resetProgressBtn" class="btn btn-outline-danger btn-xs" title="Reset all checklist data">Reset</button>
+          <input type="file" id="importFileInput" accept=".json" style="display: none;" />
+        </div>
+        <div class="footer-note">Designed for 1:1 Engineering Mentorship</div>
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="main-content" id="mainContent">
+      <!-- Top banner / header -->
+      <header class="content-header">
+        <div class="header-breadcrumb">
+          <button id="mobileMenuToggle" class="mobile-toggle" aria-label="Toggle menu">☰</button>
+          <span id="breadcrumbPhase">Overview</span>
+          <span class="breadcrumb-separator">/</span>
+          <span id="breadcrumbTopic">Roadmap & Blueprint</span>
+        </div>
+        <div class="header-actions">
+          <a href="#getting-started" class="badge-link">🚀 Terminal Setup</a>
+          <a href="#learning-plan" class="badge-link">📅 12-Week Schedule</a>
+          <a href="#quick-cheatsheet" class="badge-link">📑 Quick Reference</a>
+        </div>
+      </header>
+
+      <div class="content-body" id="contentContainer">
+        <!-- Dynamic content injected here -->
+      </div>
+    </main>
+  </div>
+
+  <script src="data/curriculum.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
