@@ -594,44 +594,31 @@
         </div>
       </section>
 
-      <!-- Gap Analysis Section -->
+      <!-- Blueprint Section -->
       <section class="gap-analysis-card">
         <div class="gap-header">
-          <h3>🎯 Mentor Blueprint: What You Listed vs Crucial Missing Fundamentals</h3>
-          <span class="tag tag-missing">${missingCount} Essential Additions</span>
+          <h3>🎯 Mentor Blueprint: Core Curriculum &amp; Fundamentals</h3>
+          <span class="tag tag-phase">${totalTopics} Core Modules</span>
         </div>
         <p style="color: var(--text-secondary); margin-bottom: 1.25rem; font-size: 0.95rem; line-height: 1.6;">
-          Your initial list (<strong>Network, Docker, Git, CI/CD, AI Tools</strong>) forms a fantastic foundation for the modern developer workflow. However, for a <em>Full Stack Software Engineer</em> to be autonomous in production, several foundational pillars are indispensable:
+          A comprehensive roadmap for a <em>Full Stack Software Engineer</em> to achieve production autonomy, combining modern developer workflows with indispensable systems fundamentals:
         </p>
 
-        <div class="gap-grid">
-          <div class="gap-column">
-            <div class="gap-col-title" style="color: var(--accent-purple);">
-              <span>📋</span> Topics You Requested (${requestedCount})
-            </div>
-            <ul class="gap-list">
-              <li><strong>1. Git & Version Control:</strong> DAG mental model, interactive rebase, conflict resolution, bisect, reflog.</li>
-              <li><strong>2. Computer Networking:</strong> TCP/IP vs UDP, DNS resolution, HTTP/1.1-2-3, TLS handshake, CORS, WebSockets.</li>
-              <li><strong>3. Docker & Containers:</strong> Namespaces/cgroups, multi-stage Dockerfiles, volumes, bridge networks, Compose.</li>
-              <li><strong>4. CI/CD:</strong> GitHub Actions, quality gates (lint/type/test), secrets management, deployment strategies.</li>
-              <li><strong>5. AI Tools for Dev:</strong> Prompt engineering for code, context management, test generation, verification against hallucinations.</li>
-            </ul>
-          </div>
-
-          <div class="gap-column" style="border-color: rgba(245, 158, 11, 0.4);">
-            <div class="gap-col-title" style="color: var(--accent-amber);">
-              <span>⭐</span> Crucial Fundamentals Added (${missingCount})
-            </div>
-            <ul class="gap-list">
-              <li><strong>Linux & Process Lifecycle:</strong> Background jobs (&), streams/redirection (> 2>&1), lsof/ps inspection, live log follow (tail -f), signals (SIGTERM/KILL).</li>
-              <li><strong>PKI & SSH Key Mastery:</strong> Asymmetric crypto, Ed25519, strict permissions (600/700), ssh-agent, ~/.ssh/config, tunnels, Certificate Authorities.</li>
-              <li><strong>Web Architecture & Browsers:</strong> Critical rendering path (DOM/CSSOM), SSR vs CSR, Session cookies vs JWTs, OAuth2.</li>
-              <li><strong>Databases & Query Optimization:</strong> Normalization, B-Tree indexes, EXPLAIN ANALYZE, N+1 query problem, migrations.</li>
-              <li><strong>Application Security (OWASP):</strong> SQLi, XSS, CSRF, SSRF, password hashing (Argon2), secure cookie flags.</li>
-              <li><strong>System Design & Scalability:</strong> Horizontal scaling, load balancers, Cache-Aside with Redis, background worker queues.</li>
-              <li><strong>Testing & Code Quality:</strong> The Test Pyramid, integration tests with real databases, deterministic testing.</li>
-            </ul>
-          </div>
+        <div class="gap-column">
+          <ul class="gap-list">
+            <li><strong>1. Linux &amp; Process Lifecycle:</strong> Background jobs (&amp;), streams/redirection (&gt; 2&gt;&amp;1), lsof/ps inspection, live log follow (tail -f), signals (SIGTERM/KILL).</li>
+            <li><strong>2. Git &amp; Version Control:</strong> DAG mental model, interactive rebase, conflict resolution, bisect, reflog.</li>
+            <li><strong>3. PKI &amp; SSH Key Mastery:</strong> Asymmetric crypto, Ed25519, strict permissions (600/700), ssh-agent, ~/.ssh/config, tunnels, Certificate Authorities.</li>
+            <li><strong>4. Computer Networking:</strong> TCP/IP vs UDP, DNS resolution, HTTP/1.1-2-3, TLS handshake, CORS, WebSockets.</li>
+            <li><strong>5. Web Architecture &amp; Browsers:</strong> Critical rendering path (DOM/CSSOM), SSR vs CSR, Session cookies vs JWTs, OAuth2.</li>
+            <li><strong>6. Databases &amp; Query Optimization:</strong> Normalization, B-Tree indexes, EXPLAIN ANALYZE, N+1 query problem, migrations.</li>
+            <li><strong>7. Application Security (OWASP):</strong> SQLi, XSS, CSRF, SSRF, password hashing (Argon2), secure cookie flags.</li>
+            <li><strong>8. Docker &amp; Containers:</strong> Namespaces/cgroups, multi-stage Dockerfiles, volumes, bridge networks, Compose.</li>
+            <li><strong>9. CI/CD &amp; Automation:</strong> GitHub Actions, quality gates (lint/type/test), secrets management, deployment strategies.</li>
+            <li><strong>10. Testing &amp; Code Quality:</strong> The Test Pyramid, integration tests with real databases, deterministic testing.</li>
+            <li><strong>11. System Design &amp; Scalability:</strong> Horizontal scaling, load balancers, Cache-Aside with Redis, background worker queues.</li>
+            <li><strong>12. AI Tools for Dev:</strong> Prompt engineering for code, context management, test generation, verification against hallucinations.</li>
+          </ul>
         </div>
       </section>
 

@@ -143,21 +143,18 @@ echo "OS: $(uname -s) | Shell: $SHELL | Git: $(git --version | awk '{print $3}')
 
 ## 🎯 Curriculum Structure
 
-### What was requested:
-1. **Computer Networking:** OSI/TCP-IP, DNS resolution, HTTP/1.1 vs HTTP/2/3, TLS handshake, CORS, REST, WebSockets, gRPC.
-2. **Docker & Containers:** Namespaces, cgroups, multi-stage Dockerfiles, caching layers, volumes, bridge networks, Docker Compose.
-3. **Git & Version Control:** DAG mental model, interactive rebasing, merge vs rebase, resolving conflicts, reflog recovery.
-4. **CI/CD:** Automated testing pipelines, linting, GitHub Actions workflows, secrets management, deployment strategies.
-5. **AI Tools for Dev:** Prompt engineering for code, context management, test generation, debugging workflows, hallucination verification.
-
-### Crucial Missing Fundamentals Added:
-6. **Linux & Process Lifecycle:** Background jobs (`&`), streams/redirection (`> 2>&1`), process management (`lsof`/`ps`), real-time log following (`tail -f | grep`), and OS signals (`kill -15`).
-7. **PKI & SSH Key Mastery:** Asymmetric cryptography, Ed25519 vs RSA, strict Unix permissions (600/700), `ssh-agent`, `~/.ssh/config` multiplexing, SSH port forwarding tunnels, and Certificate Authorities.
-8. **Web Architecture & Security:** Critical rendering path (DOM/CSSOM), SSR vs CSR, Session cookies vs JWTs, OAuth2/OIDC.
-9. **Databases & Data Modeling:** Relational schema design, indexes (B-Tree), `EXPLAIN ANALYZE`, transactions & ACID, N+1 query problem, migrations.
-10. **Application Security (OWASP Top 10):** SQL injection, XSS, CSRF, SSRF, password hashing (Argon2), secure cookie flags.
+1. **Linux & Process Lifecycle:** Background jobs (`&`), streams/redirection (`> 2>&1`), process management (`lsof`/`ps`), real-time log following (`tail -f | grep`), and OS signals (`kill -15`).
+2. **Git & Version Control:** DAG mental model, interactive rebasing, merge vs rebase, resolving conflicts, reflog recovery.
+3. **PKI & SSH Key Mastery:** Asymmetric cryptography, Ed25519 vs RSA, strict Unix permissions (600/700), `ssh-agent`, `~/.ssh/config` multiplexing, SSH port forwarding tunnels, and Certificate Authorities.
+4. **Computer Networking:** OSI/TCP-IP, DNS resolution, HTTP/1.1 vs HTTP/2/3, TLS handshake, CORS, REST, WebSockets, gRPC.
+5. **Web Architecture & Security:** Critical rendering path (DOM/CSSOM), SSR vs CSR, Session cookies vs JWTs, OAuth2/OIDC.
+6. **Databases & Data Modeling:** Relational schema design, indexes (B-Tree), `EXPLAIN ANALYZE`, transactions & ACID, N+1 query problem, migrations.
+7. **Application Security (OWASP Top 10):** SQL injection, XSS, CSRF, SSRF, password hashing (Argon2), secure cookie flags.
+8. **Docker & Containers:** Namespaces, cgroups, multi-stage Dockerfiles, caching layers, volumes, bridge networks, Docker Compose.
+9. **CI/CD & Automation:** Automated testing pipelines, linting, GitHub Actions workflows, secrets management, deployment strategies.
+10. **Testing & Code Quality:** The Test Pyramid (Unit, Integration, E2E), testing with real ephemeral databases, mocking strategies.
 11. **System Design & Scalability:** Stateless services, horizontal scaling, load balancers, caching strategies (Redis Cache-Aside), async queues.
-12. **Testing & Code Quality:** The Test Pyramid (Unit, Integration, E2E), testing with real ephemeral databases, mocking strategies.
+12. **AI Tools for Dev:** Prompt engineering for code, context management, test generation, debugging workflows, hallucination verification.
 
 ---
 
